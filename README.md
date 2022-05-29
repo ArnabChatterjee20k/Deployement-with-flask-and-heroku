@@ -2,8 +2,11 @@
 
 ## Python setup
 > pip psycopg2  gunicorn
+
 > pip freeze > requirements.txt
+
 > touch Procfile
+
 > Inside the procfile add this command <b>web: gunicorn app:app</b>
 
 ## Repo setup
