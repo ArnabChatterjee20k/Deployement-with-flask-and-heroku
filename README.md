@@ -11,11 +11,14 @@
 
 ## Repo setup
 > git add .
+
 > git commit -m "message"
 
 ## heroku 
 > <b>heroku login -i</b> for loggin in the terminal itself
+
 > To log in browser heroku login
+
 > heroku create appname
 
 ## instance a database
@@ -23,7 +26,9 @@
 
 ## get the database URI
 > heroku config --app appname
+
 > Make sure that the uri is beginning with <b>postgresql://</b>
+
 > Actually the heroku provide us the config starting with postgres not with postgresql.
 
 <p>You will get DATABASE_URL as key and URI as the value . Copy this and set it in the system environment variable.</p>
@@ -43,10 +48,12 @@
 
 # Pushing the code
 > If you want to get the url then use <b>heroku git:remote -a appname</b> else the next step.
+
 > git push heroku master
 
 ## adding the table to the remote database
 > U can use terminal or the dashboard in the heroku website
+
 > heroku run python
 ```
     from app import db
