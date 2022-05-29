@@ -35,7 +35,7 @@
 
 # setting the uri from the environment in the app.py
 > app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URI")
-<li>We are not using DATABASE_URI as we cant overwrite the DATABASE_URL value and it is needed as flask-sqlalchemy supports uri beginning with <b>postgresql not postgres</b> </li>
+<li>We are not using DATABASE_URL as we cant overwrite the DATABASE_URL value and it is needed as flask-sqlalchemy supports uri beginning with <b>postgresql not postgres</b> </li>
 <p>But here is a problem so follow the steps below</p>
 <p>We are using environment variable as it is secure and the uri is already present in the heroku environment.</p>
 
